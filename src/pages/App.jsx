@@ -3,11 +3,9 @@ import Workouts from "./Workouts";
 
 function App() {
   return (
-    <div className="bg-light-100 flex flex-col h-screen">
-      <Header />
-      <div className="bg-dark-900 h-full p-6 rounded-t-2xl text-light-100">
-        <Workouts />
-      </div>
+    <div className="bg-dark-900 flex flex-col h-screen text-light-100">
+      <Header title="Workouts"/>
+      <Workouts />
     </div>
   );
 }

@@ -1,7 +1,13 @@
-function Header() {
+import { IoChevronBack } from "react-icons/io5";
+
+function Header({ title }) {
   return (
-    <div className="bg-light-100 flex items-center justify-center p-3">
-      <h1 className="font-bold text-3xl">Workouts</h1>
+    <div className="bg-dark-900 flex items-center justify-between p-6">
+      <p>
+        <IoChevronBack size="1.5rem" />
+      </p>
+      <h1 className="font-bold text-3xl">{title}</h1>
+      <div className="w-6"/>
     </div>
   );
 }
