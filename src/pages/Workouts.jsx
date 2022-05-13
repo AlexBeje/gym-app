@@ -10,7 +10,7 @@ function Workouts() {
         <div className="flex-none snap-center w-full">
           <Workout name="Push Day" />
         </div>
-        <div className="flex-none snap-center w-full">
+        <div className="flex-none snap-center w-full pr-6">
           <Workout name="Legs Day Test" />
         </div>
       </div>
