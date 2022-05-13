@@ -4,10 +4,10 @@
   "display": "standalone",
   "scope": "/",
   "start_url": ".",
-  "name": "GYM App",
+  "name": "GYM",
   "icons": [
     {
-      "src": "icon/gym.png",
+      "src": "icon/gym_transparent.png",
       "sizes": "64x64",
       "type": "image/png"
     }
