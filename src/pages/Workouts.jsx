@@ -1,6 +1,6 @@
 import Workout from "../components/Workout";
 
-import { isMobile } from "react-device-detect";
+import { BrowserView, MobileView } from "react-device-detect";
 
 function Workouts() {
   return (
@@ -12,9 +12,16 @@ function Workouts() {
         <div className="flex-none snap-center w-full">
           <Workout name="Push Day" />
         </div>
-        <div className={`flex-none snap-center w-full ${isMobile && "pr-6"}`}>
-          <Workout name="Legs Day Test" />
-        </div>
+        <BrowserView>
+          <div className="flex-none snap-center w-full">
+            <Workout name="Legs Day Test" />
+          </div>
+        </BrowserView>
+        <MobileView>
+          <div className="flex-none snap-center w-full pr-6">
+            <Workout name="Legs Day Test" />
+          </div>
+        </MobileView>
       </div>
     </div>
   );
