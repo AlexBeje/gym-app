@@ -7,8 +7,8 @@
   "name": "GYM App",
   "icons": [
     {
-      "src": "icon/gym-icon.png",
-      "sizes": "192x192",
+      "src": "icon/gym.png",
+      "sizes": "64x64",
       "type": "image/png"
     }
   ]
