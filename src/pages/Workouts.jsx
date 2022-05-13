@@ -1,5 +1,7 @@
 import Workout from "../components/Workout";
 
+import { isMobile } from "react-device-detect";
+
 function Workouts() {
   return (
     <div className="bg-light-100 h-full rounded-t-2xl text-dark-900">
@@ -10,7 +12,7 @@ function Workouts() {
         <div className="flex-none snap-center w-full">
           <Workout name="Push Day" />
         </div>
-        <div className="flex-none snap-center w-full pr-6">
+        <div className={`flex-none snap-center w-full ${isMobile && "pr-6"}`}>
           <Workout name="Legs Day Test" />
         </div>
       </div>
