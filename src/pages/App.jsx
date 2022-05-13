@@ -1,11 +1,13 @@
-import { useState } from "react";
+import Header from "../components/Header";
+import Workouts from "./Workouts";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <div>
-      <h1 class="text-3xl font-bold underline">Hello world!</h1>
+    <div className="bg-light-100 flex flex-col h-screen">
+      <Header />
+      <div className="bg-dark-900 h-full p-6 rounded-t-2xl text-light-100">
+        <Workouts />
+      </div>
     </div>
   );
 }
