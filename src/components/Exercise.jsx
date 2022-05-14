@@ -43,7 +43,7 @@ function Exercise({ exerciseData, firstExercise }) {
           <div className="flex items-center">
             {!exerciseData.editableReps ? <span>kg</span> : <span>reps</span>}
             <input
-              type="number"
+              type="text"
               defaultValue={
                 exerciseData.editableReps
                   ? exerciseData.editableReps
