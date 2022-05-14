@@ -12,10 +12,28 @@
     ]
   },
   {
-    "title": "Push Day"
+    "title": "Push Day",
+    "exerecises": [
+      {
+        "name": "Deadlift",
+        "sets": "4",
+        "reps": "6",
+        "weight": "100",
+        "firstExercise": true
+      }
+    ]
   },
   {
     "title": "Legs Day",
-    "lastWorkout": true
+    "lastWorkout": true,
+    "exerecises": [
+      {
+        "name": "Deadlift",
+        "sets": "4",
+        "reps": "6",
+        "weight": "100",
+        "firstExercise": true
+      }
+    ]
   }
 ]
