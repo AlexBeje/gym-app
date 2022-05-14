@@ -8,32 +8,45 @@
         "reps": "6",
         "weight": "100",
         "firstExercise": true
+      },
+      {
+        "name": "Barbell Row",
+        "sets": "3",
+        "reps": "10",
+        "weight": "40"
+      },
+      {
+        "name": "Dumbbell Pullover",
+        "sets": "3",
+        "reps": "12",
+        "weight": "25"
+      },
+      {
+        "name": "Dumbbell Upright Row",
+        "sets": "3",
+        "reps": "12",
+        "weight": "10"
+      },
+      {
+        "name": "Chin up",
+        "sets": "3",
+        "editableReps": "6",
+        "superSet": true
+      },
+      {
+        "name": "Tricep Overhead",
+        "sets": "3",
+        "reps": "12",
+        "weight": "30",
+        "superSet": true
       }
     ]
   },
   {
-    "title": "Push Day",
-    "exerecises": [
-      {
-        "name": "Deadlift",
-        "sets": "4",
-        "reps": "6",
-        "weight": "100",
-        "firstExercise": true
-      }
-    ]
+    "title": "Push Day"
   },
   {
     "title": "Legs Day",
-    "lastWorkout": true,
-    "exerecises": [
-      {
-        "name": "Deadlift",
-        "sets": "4",
-        "reps": "6",
-        "weight": "100",
-        "firstExercise": true
-      }
-    ]
+    "lastWorkout": true
   }
 ]
