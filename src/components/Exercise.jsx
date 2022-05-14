@@ -7,7 +7,7 @@ function Exercise({ exerciseData, firstExercise }) {
     <div className="flex">
       { exerciseData.superSet && !checked && <div className="bg-dark-500 min-w-[8px] z-10"/>}
       <div
-        className={`opacity-90 px-6 py-3 w-full
+        className={`opacity-90 px-6 py-2 w-full
         ${firstExercise ? "border-y-[1px]" : "border-b-[1px]"}
         ${checked ? "border-green-600" : "border-dark-600"}
         ${
