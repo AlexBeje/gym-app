@@ -4,8 +4,8 @@ function Exercise({ exerciseData, firstExercise }) {
   const [checked, setChecked] = useState(false);
 
   return (
-    <div className="flex-1">
-      { exerciseData.superSet && !checked && <div className="bg-dark-500 min-w-[8px] z-10"/>}
+    <div className="flex-1 relative">
+      { exerciseData.superSet && !checked && <div className="absolute bg-dark-500 h-full min-w-[8px] z-10"/>}
       <div
         className={`flex flex-col h-full justify-center opacity-90 px-6 py-2 w-full
         ${firstExercise ? "border-y-[1px]" : "border-b-[1px]"}
