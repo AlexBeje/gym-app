@@ -4,10 +4,10 @@ function Exercise({ exerciseData, firstExercise }) {
   const [checked, setChecked] = useState(false);
 
   return (
-    <div className="flex">
+    <div className="flex-1">
       { exerciseData.superSet && !checked && <div className="bg-dark-500 min-w-[8px] z-10"/>}
       <div
-        className={`opacity-90 px-6 py-2 w-full
+        className={`flex flex-col h-full justify-center opacity-90 px-6 py-2 w-full
         ${firstExercise ? "border-y-[1px]" : "border-b-[1px]"}
         ${checked ? "border-green-600" : "border-dark-600"}
         ${
@@ -50,7 +50,7 @@ function Exercise({ exerciseData, firstExercise }) {
                   : exerciseData.weight
               }
               onClick={(e) => e.stopPropagation()}
-              className={`flex ml-2 p-2 rounded-sm text-center font-bold w-12
+              className={`flex font-bold ml-2 p-2 rounded-sm text-center w-14
               ${
                 checked
                   ? "bg-green-600 text-dark-900"
