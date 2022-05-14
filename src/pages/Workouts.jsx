@@ -16,6 +16,7 @@ function Workouts() {
               </div>
             );
           })}
+        <div className="h-full w-6" />
       </div>
     </div>
   );
