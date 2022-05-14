@@ -12,6 +12,7 @@ function Workouts() {
                 <Workout
                   title={workout.title}
                   exercisesData={workout.exerecises}
+                  video={workout.video}
                 />
               </div>
             );

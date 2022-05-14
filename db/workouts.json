@@ -1,6 +1,7 @@
 [
   {
     "title": "Pull Day",
+    "video": "https://www.youtube.com/watch?v=IOl42YpK_Es",
     "exerecises": [
       {
         "name": "Deadlift",
@@ -44,6 +45,7 @@
   },
   {
     "title": "Push Day",
+    "video": "https://www.youtube.com/watch?v=HE45jVN7XKM",
     "exerecises": [
       {
         "name": "Barbell Bench Press",
@@ -89,37 +91,38 @@
   {
     "title": "Legs Day",
     "lastWorkout": true,
+    "video": "https://www.youtube.com/watch?v=X6H4l9R3DnY",
     "exerecises": [
       {
         "name": "Back Squat",
         "sets": "4",
         "reps": "6",
-        "weight": "?",
+        "weight": "0",
         "firstExercise": true
       },
       {
         "name": "Hip Thrust",
         "sets": "3",
         "reps": "10",
-        "weight": "?"
+        "weight": "0"
       },
       {
         "name": "Reverse Lunge",
         "sets": "3",
         "reps": "12",
-        "weight": "?"
+        "weight": "0"
       },
       {
         "name": "Kettlebell Deadlift",
         "sets": "3",
         "reps": "12",
-        "weight": "?"
+        "weight": "0"
       },
       {
         "name": "Calf Rise",
         "sets": "3",
         "reps": "20",
-        "weight": "?"
+        "weight": "0"
       }
     ]
   }
