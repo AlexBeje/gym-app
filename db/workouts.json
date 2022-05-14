@@ -43,10 +43,84 @@
     ]
   },
   {
-    "title": "Push Day"
+    "title": "Push Day",
+    "exerecises": [
+      {
+        "name": "Barbell Bench Press",
+        "sets": "4",
+        "reps": "6",
+        "weight": "80",
+        "firstExercise": true
+      },
+      {
+        "name": "Cable Crossover",
+        "sets": "4",
+        "reps": "12",
+        "weight": "35"
+      },
+      {
+        "name": "Dumbbell Shoulder",
+        "sets": "4",
+        "reps": "10",
+        "weight": "15"
+      },
+      {
+        "name": "Lateral Rise",
+        "sets": "4",
+        "reps": "15",
+        "weight": "10"
+      },
+      {
+        "name": "Dumbbell Skullcrusher",
+        "sets": "3",
+        "reps": "12",
+        "weight": "15",
+        "superSet": true
+      },
+      {
+        "name": "Waiter Curls",
+        "sets": "3",
+        "reps": "12",
+        "weight": "15",
+        "superSet": true
+      }
+    ]
   },
   {
     "title": "Legs Day",
-    "lastWorkout": true
+    "lastWorkout": true,
+    "exerecises": [
+      {
+        "name": "Back Squat",
+        "sets": "4",
+        "reps": "6",
+        "weight": "?",
+        "firstExercise": true
+      },
+      {
+        "name": "Hip Thrust",
+        "sets": "3",
+        "reps": "10",
+        "weight": "?"
+      },
+      {
+        "name": "Reverse Lunge",
+        "sets": "3",
+        "reps": "12",
+        "weight": "?"
+      },
+      {
+        "name": "Kettlebell Deadlift",
+        "sets": "3",
+        "reps": "12",
+        "weight": "?"
+      },
+      {
+        "name": "Calf Rise",
+        "sets": "3",
+        "reps": "20",
+        "weight": "?"
+      }
+    ]
   }
 ]
