@@ -4,7 +4,7 @@ function Workout({ title, exercisesData }) {
   return (
     <div className="bg-dark-900 flex flex-col h-full relative rounded-xl shadow-lg shadow-light-900 text-light-100">
       <div className="absolute bg-gradient-to-t from-dark-800 h-full rounded-b-lg to-transparent w-full bottom-0" />
-      <h1 className="font-bold p-3 text-2xl text-center z-10">{title}</h1>
+      <h1 className="font-bold p-4 text-2xl text-center z-10">{title}</h1>
       <div className="z-10">
         {exercisesData && exercisesData.map((exercise, index) => {
           return (
