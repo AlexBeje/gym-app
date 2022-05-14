@@ -23,7 +23,7 @@ function Workout({ title, video, exercisesData }) {
         </div>
         <div className="flex items-center justify-center min-h-[64px]">
           <a href={video} className="z-20">
-            <IoVideocam className="text-dark-300" size="24" />
+            <IoVideocam className="text-dark-200" size="24" />
           </a>
         </div>
       </div>
