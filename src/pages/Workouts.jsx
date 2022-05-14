@@ -5,13 +5,13 @@ function Workouts() {
     <div className="bg-light-100 h-full rounded-t-2xl text-dark-900">
       <div className="flex h-full overflow-x-auto p-6 relative snap-mandatory snap-x w-full gap-3">
         <div className="flex-none snap-center w-full">
-          <Workout name="Pull Day" />
+          <Workout title="Pull Day" />
         </div>
         <div className="flex-none snap-center w-full">
-          <Workout name="Push Day" />
+          <Workout title="Push Day" />
         </div>
         <div className="flex-none snap-center w-full pr-6">
-          <Workout name="Legs Day Test" />
+          <Workout title="Legs Day Test" />
         </div>
       </div>
     </div>
