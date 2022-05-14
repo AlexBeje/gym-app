@@ -15,6 +15,7 @@
     "title": "Push Day"
   },
   {
-    "title": "Legs Day"
+    "title": "Legs Day",
+    "lastWorkout": true
   }
 ]
