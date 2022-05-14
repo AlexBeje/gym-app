@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Pull Day",
+    "exerecises": [
+      {
+        "name": "Deadlift",
+        "sets": "4",
+        "reps": "6",
+        "weight": "100",
+        "firstExercise": true
+      }
+    ]
+  },
+  {
+    "title": "Push Day"
+  },
+  {
+    "title": "Legs Day"
+  }
+]
