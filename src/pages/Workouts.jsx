@@ -16,7 +16,7 @@ function Workouts() {
               </div>
             );
           })}
-        <div className="h-full min-w-[24px]"></div>
+        <div className="min-w-[24px]" />
       </div>
     </div>
   );
