@@ -57,6 +57,7 @@ function Exercise({ exerciseData, firstExercise }) {
           <div className="flex items-center">
             {!exerciseData.editableReps ? <span>kg</span> : <span>reps</span>}
             <input
+              onFocus={(e) => e.target.select()}
               onClick={(e) => e.stopPropagation()}
               onBlur={(e) => updateExerciseData(e.target.value)}
               className={`flex font-bold ml-2 p-2 rounded-sm text-center w-14
