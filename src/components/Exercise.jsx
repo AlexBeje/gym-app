@@ -12,7 +12,7 @@ function Exercise({ exerciseData, firstExercise }) {
 
   const [exerciseReps, setExerciseReps] = useLocalStorage(
     exerciseData.name,
-    exerciseData.reps
+    exerciseData.editableReps
   );
 
   const updateExerciseData = (exerciseInputData) => {

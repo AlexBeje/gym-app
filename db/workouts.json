@@ -7,38 +7,38 @@
         "name": "Deadlift",
         "sets": "4",
         "reps": "6",
-        "weight": "100",
+        "weight": "0",
         "firstExercise": true
       },
       {
         "name": "Barbell Row",
         "sets": "3",
         "reps": "10",
-        "weight": "40"
+        "weight": "0"
       },
       {
         "name": "Dumbbell Pullover",
         "sets": "3",
         "reps": "12",
-        "weight": "25"
+        "weight": "0"
       },
       {
         "name": "Dumbbell Upright Row",
         "sets": "3",
         "reps": "12",
-        "weight": "10"
+        "weight": "0"
       },
       {
         "name": "Chin up",
         "sets": "3",
-        "editableReps": "6",
+        "editableReps": "0",
         "superSet": true
       },
       {
         "name": "Tricep Overhead",
         "sets": "3",
         "reps": "12",
-        "weight": "30",
+        "weight": "0",
         "superSet": true
       }
     ]
@@ -51,39 +51,39 @@
         "name": "Barbell Bench Press",
         "sets": "4",
         "reps": "6",
-        "weight": "80",
+        "weight": "0",
         "firstExercise": true
       },
       {
         "name": "Cable Crossover",
         "sets": "4",
         "reps": "12",
-        "weight": "35"
+        "weight": "0"
       },
       {
         "name": "Dumbbell Shoulder",
         "sets": "4",
         "reps": "10",
-        "weight": "15"
+        "weight": "0"
       },
       {
         "name": "Lateral Rise",
         "sets": "4",
         "reps": "15",
-        "weight": "10"
+        "weight": "0"
       },
       {
         "name": "Dumbbell Skullcrusher",
         "sets": "3",
         "reps": "12",
-        "weight": "15",
+        "weight": "0",
         "superSet": true
       },
       {
         "name": "Waiter Curls",
         "sets": "3",
         "reps": "12",
-        "weight": "15",
+        "weight": "0",
         "superSet": true
       }
     ]
