@@ -9,9 +9,20 @@ function Exercise({ exerciseData, firstExercise }) {
     exerciseData.weight
   );
 
-  const updateExerciseData = (weight) => {
-    if (weight !== exerciseWeight) {
-      setExerciseWeight(weight);
+  const [exerciseReps, setExerciseReps] = useLocalStorage(
+    exerciseData.name,
+    exerciseData.reps
+  );
+
+  const updateExerciseData = (exerciseInputData) => {
+    if (exerciseData.editableReps) {
+      if (exerciseInputData !== exerciseReps) {
+        setExerciseReps(exerciseInputData);
+      }
+    } else {
+      if (exerciseInputData !== exerciseWeight) {
+        setExerciseWeight(exerciseInputData);
+      }
     }
   };
 
@@ -70,7 +81,7 @@ function Exercise({ exerciseData, firstExercise }) {
               type="number"
               defaultValue={
                 exerciseData.editableReps
-                  ? exerciseData.editableReps
+                  ? exerciseReps
                   : exerciseWeight
               }
             />
