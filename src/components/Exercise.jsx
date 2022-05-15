@@ -9,8 +9,10 @@ function Exercise({ exerciseData, firstExercise }) {
     exerciseData.weight
   );
 
-  const updateExerciseData = (name, weight) => {
-    setExerciseWeight(name, weight);
+  const updateExerciseData = (weight) => {
+    if (weight !== exerciseWeight) {
+      setExerciseWeight(weight);
+    }
   };
 
   return (
@@ -56,7 +58,7 @@ function Exercise({ exerciseData, firstExercise }) {
             {!exerciseData.editableReps ? <span>kg</span> : <span>reps</span>}
             <input
               onClick={(e) => e.stopPropagation()}
-              onKeyDown={(e) => updateExerciseData(e.target.value)}
+              onBlur={(e) => updateExerciseData(e.target.value)}
               className={`flex font-bold ml-2 p-2 rounded-sm text-center w-14
                 ${
                   checked
