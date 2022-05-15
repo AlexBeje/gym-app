@@ -4,6 +4,7 @@ import { useLocalStorage } from "usehooks-ts";
 
 function Exercise({ exerciseData, firstExercise }) {
   const [checked, setChecked] = useState(false);
+
   const [exerciseWeight, setExerciseWeight] = useLocalStorage(
     exerciseData.name,
     exerciseData.weight
@@ -33,7 +34,7 @@ function Exercise({ exerciseData, firstExercise }) {
       )}
       <div
         onClick={() => setChecked(!checked)}
-        className={`flex flex-col h-full justify-center opacity-90 px-6 py-2 w-full
+        className={`cursor-pointer flex flex-col h-full justify-center opacity-90 px-6 py-2 w-full
         ${firstExercise ? "border-y-[1px]" : "border-b-[1px]"}
         ${checked ? "border-green-600" : "border-dark-600"}
         ${
