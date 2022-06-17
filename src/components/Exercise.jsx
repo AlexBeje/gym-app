@@ -6,8 +6,13 @@ function Exercise({ exerciseData, firstExercise }) {
   const [checked, setChecked] = useState(false);
 
   const [exerciseWeight, setExerciseWeight] = useLocalStorage(
-    exerciseData.name,
+    exerciseData.name + " weight: " + exerciseData.weight,
     exerciseData.weight
+  );
+
+  const [exerciseUnit, setExerciseUnit] = useLocalStorage(
+    exerciseData.name + "  unit: " + exerciseData.unit,
+    exerciseData.unit
   );
 
   const [exerciseReps, setExerciseReps] = useLocalStorage(
@@ -24,6 +29,17 @@ function Exercise({ exerciseData, firstExercise }) {
       if (exerciseInputData !== exerciseWeight) {
         setExerciseWeight(exerciseInputData);
       }
+    }
+  };
+
+  const handleUnitClick = (e) => {
+    e.stopPropagation();
+    const unit = e.target.innerHTML;
+    console.log(unit);
+    if (unit === "kg") {
+      setExerciseUnit("lbs");
+    } else {
+      setExerciseUnit("kg");
     }
   };
 
@@ -67,12 +83,16 @@ function Exercise({ exerciseData, firstExercise }) {
             )}
           </div>
           <div className="flex items-center">
-            {!exerciseData.editableReps ? <span>kg</span> : <span>reps</span>}
+            {!exerciseData.editableReps ? (
+              <span onClick={(e) => handleUnitClick(e)}>{exerciseUnit}</span>
+            ) : (
+              <span>reps</span>
+            )}
             <input
               onFocus={(e) => e.target.select()}
               onClick={(e) => e.stopPropagation()}
               onBlur={(e) => updateExerciseData(e.target.value)}
-              className={`flex font-bold ml-2 p-2 rounded-sm text-center w-14
+              className={`flex font-bold ml-2 p-2 rounded-sm text-center w-16
                 ${
                   checked
                     ? "bg-green-600 text-dark-900"
@@ -81,9 +101,7 @@ function Exercise({ exerciseData, firstExercise }) {
               `}
               type="number"
               defaultValue={
-                exerciseData.editableReps
-                  ? exerciseReps
-                  : exerciseWeight
+                exerciseData.editableReps ? exerciseReps : exerciseWeight
               }
             />
           </div>

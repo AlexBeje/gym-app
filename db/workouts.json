@@ -8,25 +8,29 @@
         "sets": "4",
         "reps": "6",
         "weight": "0",
+        "unit": "kg",
         "firstExercise": true
       },
       {
         "name": "Barbell Row",
         "sets": "3",
         "reps": "10",
-        "weight": "0"
+        "weight": "0",
+        "unit": "kg"
       },
       {
         "name": "Dumbbell Pullover",
         "sets": "3",
         "reps": "12",
-        "weight": "0"
+        "weight": "0",
+        "unit": "kg"
       },
       {
         "name": "Dumbbell Upright Row",
         "sets": "3",
         "reps": "12",
-        "weight": "0"
+        "weight": "0",
+        "unit": "kg"
       },
       {
         "name": "Chin up",
@@ -39,6 +43,7 @@
         "sets": "3",
         "reps": "12",
         "weight": "0",
+        "unit": "kg",
         "superSet": true
       }
     ]
@@ -52,31 +57,36 @@
         "sets": "4",
         "reps": "6",
         "weight": "0",
+        "unit": "kg",
         "firstExercise": true
       },
       {
         "name": "Cable Crossover",
         "sets": "4",
         "reps": "12",
-        "weight": "0"
+        "weight": "0",
+        "unit": "kg"
       },
       {
         "name": "Dumbbell Shoulder",
         "sets": "4",
         "reps": "10",
-        "weight": "0"
+        "weight": "0",
+        "unit": "kg"
       },
       {
         "name": "Lateral Rise",
         "sets": "4",
         "reps": "15",
-        "weight": "0"
+        "weight": "0",
+        "unit": "kg"
       },
       {
         "name": "Dumbbell Skullcrusher",
         "sets": "3",
         "reps": "12",
         "weight": "0",
+        "unit": "kg",
         "superSet": true
       },
       {
@@ -84,6 +94,7 @@
         "sets": "3",
         "reps": "12",
         "weight": "0",
+        "unit": "kg",
         "superSet": true
       }
     ]
@@ -98,31 +109,36 @@
         "sets": "4",
         "reps": "6",
         "weight": "0",
+        "unit": "kg",
         "firstExercise": true
       },
       {
         "name": "Hip Thrust",
         "sets": "3",
         "reps": "10",
-        "weight": "0"
+        "weight": "0",
+        "unit": "kg"
       },
       {
         "name": "Reverse Lunge",
         "sets": "3",
         "reps": "12",
-        "weight": "0"
+        "weight": "0",
+        "unit": "kg"
       },
       {
         "name": "Kettlebell Deadlift",
         "sets": "3",
         "reps": "12",
-        "weight": "0"
+        "weight": "0",
+        "unit": "kg"
       },
       {
         "name": "Calf Rise",
         "sets": "3",
         "reps": "20",
-        "weight": "0"
+        "weight": "0",
+        "unit": "kg"
       }
     ]
   }
