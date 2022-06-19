@@ -5,29 +5,30 @@ import { useEffect } from "react";
 import { useLocalStorage } from "usehooks-ts";
 
 function Exercise({
+  workoutTitle,
   exerciseData,
   firstExercise,
   resetExercise,
   setResetExercise,
 }) {
-  const [exerciseCompleted, setExerciseCompleted] = useLocalStorage(
-    exerciseData.name + ".completed." + exerciseData.completed,
-    exerciseData.completed
+  const [exerciseReps, setExerciseReps] = useLocalStorage(
+    workoutTitle + "." + exerciseData.name + ".reps." + exerciseData.reps,
+    exerciseData.editableReps
   );
 
   const [exerciseWeight, setExerciseWeight] = useLocalStorage(
-    exerciseData.name + ".weight." + exerciseData.weight,
+    workoutTitle + "." + exerciseData.name + ".weight." + exerciseData.weight,
     exerciseData.weight
   );
 
   const [exerciseUnit, setExerciseUnit] = useLocalStorage(
-    exerciseData.name + ".unit." + exerciseData.unit,
+    workoutTitle + "." + exerciseData.name + ".unit." + exerciseData.unit,
     exerciseData.unit
   );
 
-  const [exerciseReps, setExerciseReps] = useLocalStorage(
-    exerciseData.name,
-    exerciseData.editableReps
+  const [exerciseCompleted, setExerciseCompleted] = useLocalStorage(
+    workoutTitle + "." + exerciseData.name + ".completed." + exerciseData.completed,
+    exerciseData.completed
   );
 
   const updateExerciseData = (exerciseInputData) => {

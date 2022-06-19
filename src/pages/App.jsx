@@ -38,7 +38,7 @@ function App() {
               return (
                 <div className="flex-none snap-center w-full" key={index}>
                   <Workout
-                    title={workout.title}
+                    workoutTitle={workout.title}
                     exercisesData={workout.exerecises}
                     video={workout.video}
                     resetExercise={resetExercise}
