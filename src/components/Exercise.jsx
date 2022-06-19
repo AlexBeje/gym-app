@@ -1,17 +1,27 @@
-import { useState } from "react";
+// React
+import { useEffect } from "react";
 
+// Use Hooks TS
 import { useLocalStorage } from "usehooks-ts";
 
-function Exercise({ exerciseData, firstExercise }) {
-  const [checked, setChecked] = useState(false);
+function Exercise({
+  exerciseData,
+  firstExercise,
+  resetExercise,
+  setResetExercise,
+}) {
+  const [exerciseCompleted, setExerciseCompleted] = useLocalStorage(
+    exerciseData.name + ".completed." + exerciseData.completed,
+    exerciseData.completed
+  );
 
   const [exerciseWeight, setExerciseWeight] = useLocalStorage(
-    exerciseData.name + " weight: " + exerciseData.weight,
+    exerciseData.name + ".weight." + exerciseData.weight,
     exerciseData.weight
   );
 
   const [exerciseUnit, setExerciseUnit] = useLocalStorage(
-    exerciseData.name + "  unit: " + exerciseData.unit,
+    exerciseData.name + ".unit." + exerciseData.unit,
     exerciseData.unit
   );
 
@@ -35,7 +45,6 @@ function Exercise({ exerciseData, firstExercise }) {
   const handleUnitClick = (e) => {
     e.stopPropagation();
     const unit = e.target.innerHTML;
-    console.log(unit);
     if (unit === "kg") {
       setExerciseUnit("lbs");
     } else {
@@ -43,18 +52,27 @@ function Exercise({ exerciseData, firstExercise }) {
     }
   };
 
+  useEffect(() => {
+    if (resetExercise) {
+      setExerciseCompleted(false);
+      setResetExercise(false);
+    }
+  }, [resetExercise]);
+
   return (
     <div className="flex-1 relative">
-      {exerciseData.superSet && !checked && (
+      {exerciseData.superSet && !exerciseCompleted && (
         <div className="absolute bg-dark-500 h-full min-w-[8px] z-10" />
       )}
       <div
-        onClick={() => setChecked(!checked)}
+        onClick={() => setExerciseCompleted(!exerciseCompleted)}
         className={`cursor-pointer flex flex-col h-full justify-center opacity-90 px-6 py-2 w-full
         ${firstExercise ? "border-y-[1px]" : "border-b-[1px]"}
-        ${checked ? "border-green-600" : "border-dark-600"}
+        ${exerciseCompleted ? "border-green-600" : "border-dark-600"}
         ${
-          checked ? "bg-green-500 text-dark-900" : "bg-dark-700 text-dark-100"
+          exerciseCompleted
+            ? "bg-green-500 text-dark-900"
+            : "bg-dark-700 text-dark-100"
         }`}
       >
         <h2 className="font-bold mb-1 text-xl">{exerciseData.name}</h2>
@@ -63,7 +81,7 @@ function Exercise({ exerciseData, firstExercise }) {
             <p className="flex items-center">
               <span
                 className={`font-bold mr-2 text-2xl 
-              ${checked ? "text-dark-900" : "text-light-100"}`}
+              ${exerciseCompleted ? "text-dark-900" : "text-light-100"}`}
               >
                 {exerciseData.sets}
               </span>
@@ -74,7 +92,7 @@ function Exercise({ exerciseData, firstExercise }) {
               <p className="flex items-center">
                 <span
                   className={`font-bold mr-2 text-2xl 
-                ${checked ? "text-dark-900" : "text-light-100"}`}
+                ${exerciseCompleted ? "text-dark-900" : "text-light-100"}`}
                 >
                   {exerciseData.reps}
                 </span>
@@ -94,7 +112,7 @@ function Exercise({ exerciseData, firstExercise }) {
               onBlur={(e) => updateExerciseData(e.target.value)}
               className={`flex font-bold ml-2 p-2 rounded-sm text-center w-16
                 ${
-                  checked
+                  exerciseCompleted
                     ? "bg-green-600 text-dark-900"
                     : "bg-dark-800 text-light-100"
                 }

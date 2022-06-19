@@ -1,7 +1,10 @@
+// Components
 import Exercise from "./Exercise";
+
+// Icons
 import { IoVideocam } from "react-icons/io5";
 
-function Workout({ title, video, exercisesData }) {
+function Workout({ title, video, exercisesData, resetExercise, setResetExercise }) {
   return (
     <div className="bg-dark-900 flex flex-col h-full relative rounded-xl shadow-lg shadow-light-900 text-light-100">
       <div className="absolute bg-gradient-to-t bottom-0 from-dark-800 h-full rounded-b-lg to-transparent w-full" />
@@ -16,6 +19,8 @@ function Workout({ title, video, exercisesData }) {
                 <Exercise
                   exerciseData={exercise}
                   firstExercise={exercise.firstExercise}
+                  resetExercise={resetExercise}
+                  setResetExercise={setResetExercise}
                   key={index}
                 />
               );
