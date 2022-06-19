@@ -18,18 +18,13 @@ function App() {
   };
 
   return (
-    <div className="bg-dark-900 flex flex-col h-screen text-light-100">
-      <div className="flex">
-        <div className="flex-1" />
-        <h1 className="font-bold text-3xl text-center w-full p-3 flex-1">
-          Workouts
-        </h1>
-        <div className="flex-1 flex justify-center align-center">
-          <AiOutlineReload
-            className="h-full text-xl"
-            onClick={handleResetClick}
-          />
-        </div>
+    <div className="bg-dark-900 flex flex-col h-screen relative text-light-100">
+      <h1 className="font-bold p-3 text-3xl text-center w-full">Workouts</h1>
+      <div className="absolute mr-8 right-0 top-5">
+        <AiOutlineReload
+          className="cursor-pointer text-dark-200 text-xl"
+          onClick={handleResetClick}
+        />
       </div>
       <div className="bg-light-100 h-full rounded-t-2xl text-dark-900">
         <div className="flex h-full overflow-x-auto p-6 snap-mandatory snap-x gap-3">

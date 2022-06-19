@@ -7,7 +7,7 @@
         "name": "Deadlift",
         "sets": "4",
         "reps": "6",
-        "weight": "0",
+        "weight": "52.5",
         "unit": "kg",
         "completed": false,
         "firstExercise": true
@@ -16,7 +16,7 @@
         "name": "Barbell Row",
         "sets": "3",
         "reps": "10",
-        "weight": "0",
+        "weight": "18.25",
         "unit": "kg",
         "completed": false
       },
@@ -24,7 +24,7 @@
         "name": "Dumbbell Pullover",
         "sets": "3",
         "reps": "12",
-        "weight": "0",
+        "weight": "27.5",
         "unit": "kg",
         "completed": false
       },
@@ -32,22 +32,22 @@
         "name": "Dumbbell Upright Row",
         "sets": "3",
         "reps": "12",
-        "weight": "0",
+        "weight": "17.5",
         "unit": "kg",
         "completed": false
       },
       {
         "name": "Chin up",
         "sets": "3",
-        "editableReps": "0",
+        "editableReps": "4",
         "superSet": true
       },
       {
         "name": "Tricep Overhead",
         "sets": "3",
         "reps": "12",
-        "weight": "0",
-        "unit": "kg",
+        "weight": "90",
+        "unit": "lbs",
         "completed": false,
         "superSet": true
       }
@@ -61,7 +61,7 @@
         "name": "Barbell Bench Press",
         "sets": "4",
         "reps": "6",
-        "weight": "0",
+        "weight": "32.5",
         "unit": "kg",
         "completed": false,
         "firstExercise": true
@@ -70,15 +70,15 @@
         "name": "Cable Crossover",
         "sets": "4",
         "reps": "12",
-        "weight": "0",
-        "unit": "kg",
+        "weight": "25",
+        "unit": "lbs",
         "completed": false
       },
       {
         "name": "Dumbbell Shoulder",
         "sets": "4",
         "reps": "10",
-        "weight": "0",
+        "weight": "10",
         "unit": "kg",
         "completed": false
       },
@@ -86,7 +86,7 @@
         "name": "Lateral Rise",
         "sets": "4",
         "reps": "15",
-        "weight": "0",
+        "weight": "2.5",
         "unit": "kg",
         "completed": false
       },
@@ -94,7 +94,7 @@
         "name": "Dumbbell Skullcrusher",
         "sets": "3",
         "reps": "12",
-        "weight": "0",
+        "weight": "12.5",
         "unit": "kg",
         "completed": false,
         "superSet": true
@@ -103,7 +103,7 @@
         "name": "Waiter Curls",
         "sets": "3",
         "reps": "12",
-        "weight": "0",
+        "weight": "17.5",
         "unit": "kg",
         "completed": false,
         "superSet": true
