@@ -1,6 +1,6 @@
 [
   {
-    "title": "Pull Day",
+    "title": "Day 1 - Pull Day",
     "video": "https://www.youtube.com/watch?v=IOl42YpK_Es",
     "exerecises": [
       {
@@ -54,7 +54,7 @@
     ]
   },
   {
-    "title": "Push Day",
+    "title": "Day 2 - Push Day",
     "video": "https://www.youtube.com/watch?v=HE45jVN7XKM",
     "exerecises": [
       {
@@ -111,7 +111,168 @@
     ]
   },
   {
-    "title": "Legs Day",
+    "title": "Day 3 - Legs Day",
+    "video": "https://www.youtube.com/watch?v=X6H4l9R3DnY",
+    "exerecises": [
+      {
+        "name": "Back Squat",
+        "sets": "4",
+        "reps": "6",
+        "weight": "0",
+        "unit": "kg",
+        "completed": false,
+        "firstExercise": true
+      },
+      {
+        "name": "Hip Thrust",
+        "sets": "3",
+        "reps": "10",
+        "weight": "0",
+        "unit": "kg",
+        "completed": false
+      },
+      {
+        "name": "Reverse Lunge",
+        "sets": "3",
+        "reps": "12",
+        "weight": "0",
+        "unit": "kg",
+        "completed": false
+      },
+      {
+        "name": "Kettlebell Deadlift",
+        "sets": "3",
+        "reps": "12",
+        "weight": "0",
+        "unit": "kg",
+        "completed": false
+      },
+      {
+        "name": "Calf Rise",
+        "sets": "3",
+        "reps": "20",
+        "weight": "0",
+        "unit": "kg",
+        "completed": false
+      }
+    ]
+  },
+  {
+    "title": "Day 4 - Pull Day",
+    "video": "https://www.youtube.com/watch?v=IOl42YpK_Es",
+    "exerecises": [
+      {
+        "name": "Snatch Grip Deadlift",
+        "sets": "3",
+        "reps": "5",
+        "weight": "0",
+        "unit": "kg",
+        "completed": false,
+        "firstExercise": true
+      },
+      {
+        "name": "Weighted Pullups",
+        "sets": "3",
+        "reps": "8",
+        "weight": "0",
+        "unit": "kg",
+        "completed": false
+      },
+      {
+        "name": "Gorilla Rows",
+        "sets": "3",
+        "reps": "12",
+        "weight": "0",
+        "unit": "kg",
+        "completed": false
+      },
+      {
+        "name": "Straight Arm Pushdowns",
+        "sets": "3",
+        "reps": "15",
+        "weight": "0",
+        "unit": "kg",
+        "completed": false
+      },
+      {
+        "name": "Barbell / EZ Curls",
+        "sets": "3",
+        "reps": "8",
+        "weight": "0",
+        "unit": "kg",
+        "completed": false,
+        "superSet": true
+      },
+      {
+        "name": "Triceps Pushdowns",
+        "sets": "3",
+        "reps": "12",
+        "weight": "0",
+        "unit": "kg",
+        "completed": false,
+        "superSet": true
+      }
+    ]
+  },
+  {
+    "title": "Day 5 - Push Day",
+    "video": "https://www.youtube.com/watch?v=HE45jVN7XKM",
+    "exerecises": [
+      {
+        "name": "Barbell OHP",
+        "sets": "4",
+        "reps": "6",
+        "weight": "0",
+        "unit": "kg",
+        "completed": false,
+        "firstExercise": true
+      },
+      {
+        "name": "Underhand Bench Press",
+        "sets": "3",
+        "reps": "10",
+        "weight": "0",
+        "unit": "kg",
+        "completed": false
+      },
+      {
+        "name": "Abduction Rows",
+        "sets": "3",
+        "reps": "10",
+        "weight": "0",
+        "unit": "kg",
+        "completed": false
+      },
+      {
+        "name": "Floor Flys",
+        "sets": "3",
+        "reps": "12",
+        "weight": "0",
+        "unit": "kg",
+        "completed": false
+      },
+      {
+        "name": "Close Grip Bench Press",
+        "sets": "3",
+        "reps": "8",
+        "weight": "0",
+        "unit": "kg",
+        "completed": false,
+        "superSet": true
+      },
+      {
+        "name": "Curl",
+        "sets": "3",
+        "reps": "12",
+        "weight": "0",
+        "unit": "kg",
+        "completed": false,
+        "superSet": true
+      }
+    ]
+  },
+  {
+    "title": "Day 6 - Legs Day",
     "lastWorkout": true,
     "video": "https://www.youtube.com/watch?v=X6H4l9R3DnY",
     "exerecises": [
