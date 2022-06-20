@@ -11,14 +11,18 @@ import workoutsData from "../../db/workouts";
 import Workout from "../components/Workout";
 
 // Icons
+import { IoCalendar } from "react-icons/io5";
 import { IoBarbell } from "react-icons/io5";
 
 // Constants
-const WEEK_COUNTER_DEFAULT = 1;
+const WEEK_COUNTER_DEFAULT = 1000;
 
 function App() {
   const [resetExercise, setResetExercise] = useState(false);
-  const [weekCounter, setWeekCounter] = useLocalStorage("weekCounter", WEEK_COUNTER_DEFAULT);
+  const [weekCounter, setWeekCounter] = useLocalStorage(
+    "weekCounter",
+    WEEK_COUNTER_DEFAULT
+  );
 
   const handleResetClick = () => {
     setWeekCounter(weekCounter + 1);
@@ -26,21 +30,27 @@ function App() {
   };
 
   const handleWeekClick = () => {
-    if(weekCounter > 1) {
+    if (weekCounter > 1) {
       setWeekCounter(weekCounter - 1);
     }
   };
 
   return (
     <div className="bg-dark-900 flex flex-col h-screen text-light-100">
-      <div className="flex">
-        <div className="flex flex-1 font-bold items-center justify-center min-w-[30px] ml-8 text-dark-200 text-xl">
-          <span onClick={handleWeekClick}>{weekCounter}</span>
+      <div className="flex items-center justify-between p-3">
+        <div
+          onClick={handleWeekClick}
+          className="flex font-bold items-center justify-start ml-4 text-dark-200 text-lg w-[80px]"
+        >
+          <span>{weekCounter}</span>
+          <IoCalendar className="ml-1" />
         </div>
-        <h1 className="font-bold p-3 text-3xl text-center w-full">Workouts</h1>
-        <div className="flex flex-1 items-center justify-end">
+        <h1 className="font-bold text-3xl text-center">
+          Workouts
+        </h1>
+        <div className="flex items-center justify-end mr-4 w-[80px]">
           <IoBarbell
-            className="cursor-pointer mr-8 text-3xl text-dark-200"
+            className="cursor-pointer text-3xl text-dark-200"
             onClick={handleResetClick}
           />
         </div>
