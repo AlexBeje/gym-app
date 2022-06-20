@@ -15,7 +15,7 @@ import { IoCalendar } from "react-icons/io5";
 import { IoBarbell } from "react-icons/io5";
 
 // Constants
-const WEEK_COUNTER_DEFAULT = 1000;
+const WEEK_COUNTER_DEFAULT = 1;
 
 function App() {
   const [resetExercise, setResetExercise] = useState(false);
