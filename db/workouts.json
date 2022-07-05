@@ -173,8 +173,7 @@
       {
         "name": "Pullups",
         "sets": "3",
-        "editableReps": "5",
-        "superSet": true
+        "editableReps": "5"
       },
       {
         "name": "Gorilla Rows",
