@@ -12,8 +12,8 @@ function Workout({ workout }) {
       <div className='flex flex-col h-full'>
         {exercises.map((exercise) => (
           <Exercise
-            workoutTitle={title}
             exercise={exercise}
+            workoutId={workout.id}
             key={exercise.id}
           />
         ))}
