@@ -12,17 +12,9 @@ function App() {
       </div>
       <div className='bg-light-100 h-full rounded-t-2xl'>
         <div className='flex gap-3 h-full overflow-x-auto p-6 snap-mandatory snap-x'>
-          {workoutsData.map((workout) => {
-            return (
-              <div className='flex-none snap-center w-full' key={workout.id}>
-                <Workout
-                  workoutTitle={workout.title}
-                  exercisesData={workout.exerecises}
-                  video={workout.video}
-                />
-              </div>
-            );
-          })}
+          {workoutsData.map((workout) => (
+            <Workout workout={workout} key={workout.id} />
+          ))}
           <div className='min-w-[24px]' />
         </div>
       </div>
